@@ -12,16 +12,16 @@ export class Car {
     this.model=model;
     this.color=color;
     this.tankMax=tankMax;
+    this.consump=5;
     this.tank=0;
-    this.engineOn=false;
-    this.engineOff=true;
-
+    this.engineisOn=false;
     }
+
     intro() {
         return `This is ${this.color} ${this.model}.`;
     }
     refill(volume) {
-        if (this.engineOn) {
+        if (this.engineisOn) {
             return 'to refill a tank, you must turn Off the engine first';}
         if (typeof volume !== 'number' || !isFinite(volume)) {
             return 'Error: Only numbers allowed.';
@@ -33,11 +33,24 @@ export class Car {
             this.tank=this.tankMax;
         }
     }
-    carEngineOn () {
-    if (this.engineOff===true && this.tank!==0)    
-        this.engineOn=true;
-    else if (this.engineOff===false)
-        this.engineOn=false;
-    else return 'masina neuzsiveda, nes nera kuro';   
+    carEngineOn() {
+    if (this.engineIsOn===false && this.tank!==0) {    
+        this.engineIsOn=true;
+    }
+    if (this.tank===0 ) {
+    return 'Reikia ipilti kuro'}
+    if (engineisOn===true) {
+    return 'Masina neuzsiveda, nes jau uzvesta.';   
+    }
+}
+
+    drive(dis) {
+    if (this.tank===0) {
+    return 'Reikia degalu.';}
+    if (this.Tank*(100/this.consump)-dis<0) {
+    this.engineisOn=true;
+    return `masina nuvazious ${this.Tank*100/this.consump} km. ir nepasieks tikslo.`;}
+    else {
+        return `\nnuvaziuos norima atstuma`+dis;}
     }
 }
