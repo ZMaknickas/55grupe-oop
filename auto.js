@@ -9,7 +9,8 @@ zapas.refill(NaN);
 zapas.refill(Infinity);
 zapas.refill('pazadas uzpilti');
 console.log(zapas.refill(-3));
-zapas.refill(0)
+zapas.refill(15);
 console.log(zapas);
-zapas.carEngineOn();
-console.log(carEngineOn());
+//zapas.carEngineOn();
+volvo.refill(20)
+console.log(volvo.drive(50));

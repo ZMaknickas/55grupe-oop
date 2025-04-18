@@ -1,9 +1,19 @@
 {
   "name": "55-grupe-oop",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "zoo2": "node --watch ./zoo2.js",
+  "random": "node --watch ./randomas.js",
+  "animals": "node --watch ./animals.js",
+  "zoo": "node --watch ./zoo.js",
+  "namud": "node --watch ./1-namudarbai.js",
+  "auto": "node --watch ./auto.js",
+  "index": "node --watch ./index.js",
+  "uzduotys": "node --watch ./uzduotys.js",
+  "2namud": "node --watch ./2-namudarbai.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "webz (https://github.com/ZMaknickas)",

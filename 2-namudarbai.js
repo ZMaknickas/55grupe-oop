@@ -56,7 +56,7 @@ console.log('*\n 4uzdavinys')
 function geez(man) {
 let metu=man+1;    
 const r= Math.floor(Math.random()*4);
-let poor =['kede', 'kede', 'sokoladas', 'petnesos', 'kochelas'];
+let poor =['kede', 'kava', 'sokoladas', 'petnesos', 'kochelas'];
 let fancy=['kelione', 'Ferarri', 'butas', 'lektuvas', 'sraigtasparnis'];
 const good =[1, 5, 10, 15, 16, 18, 20, 30, 40, 50, 60, 70, 80, 90];
 let dovana = good.includes(metu) ? fancy[r] : poor[r];
